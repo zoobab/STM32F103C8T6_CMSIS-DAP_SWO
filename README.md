@@ -1,5 +1,4 @@
 # STM32F103C8T6_CMSIS-DAP_SWO
------------------------------
 
 Based x893's code on: https://github.com/x893/CMSIS-DAP
 
@@ -12,18 +11,9 @@ My contribution:
 5. Added BluePill board support, Remapped or unRemap (refer to Docs).
 6. Added STLINK_V2A, STLINK_V2B board support (refer to Docs).
 7. Minor changes, e.g. LED handling, project files re-group......
- -
 
 Here is the BluePill remapped SWD port in use:
 ![alt text](https://github.com/RadioOperator/STM32F103C8T6_CMSIS-DAP_SWO/blob/master/Doc/Bluepill/1.SWD_Remapped.jpg) 
- -
- -
- -
+
 Check my another repository for USB2.0 High-Speed CMSIS-DAP device, incredible more:
- -
- - https://github.com/RadioOperator/CMSIS-DAP_for_STLINK-V3MINI
- -
- - 
-
-
-
+https://github.com/RadioOperator/CMSIS-DAP_for_STLINK-V3MINI
