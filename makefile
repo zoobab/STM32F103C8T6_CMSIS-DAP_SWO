@@ -16,9 +16,9 @@ CP	= arm-none-eabi-objcopy
 OS	= arm-none-eabi-size
 OD	= arm-none-eabi-objdump
 
-VECTOR	= gcc_startupfile_stm32f103c8.s
+VECTOR	= ld/stm32f103c8.s
 
-LDSCRIPT = ./gcc_linkerfile_stm32f103c8.ld
+LDSCRIPT = ./ld/stm32f103c8.ld
 LDFLAGS  = -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -T$(LDSCRIPT) -lnosys -Wl,--gc-sections -Wl,-Map,$(PROJECT).map
 
 INC = -I./CMSIS-DAP\
