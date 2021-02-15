@@ -1,0 +1,7 @@
+si 1
+speed 2000
+r
+h
+loadbin STM32F103_BLUEPILL.bin,0x08000000
+r
+exit
