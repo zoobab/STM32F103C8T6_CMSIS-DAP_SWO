@@ -22,9 +22,9 @@ LDSCRIPT = ./gcc_linkerfile_stm32f103c8.ld
 LDFLAGS  = -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -T$(LDSCRIPT) -lnosys -Wl,--gc-sections -Wl,-Map,$(PROJECT).map
 
 INC = -I./CMSIS-DAP\
-      -I:/Keil/ARM/PACK/ARM/CMSIS/5.3.0/CMSIS/Core/Include\
-      -I:/Keil/ARM/PACK/ARM/CMSIS/5.3.0/CMSIS/Driver/Include\
-      -I:/Keil/ARM/PACK/ARM/CMSIS/5.3.0/CMSIS/Include\
+      -I./Keil/ARM/PACK/ARM/CMSIS/5.3.0/CMSIS/Core/Include\
+      -I./Keil/ARM/PACK/ARM/CMSIS/5.3.0/CMSIS/Driver/Include\
+      -I./Keil/ARM/PACK/ARM/CMSIS/5.3.0/CMSIS/Include\
       -I./Driver/STM32F10x_ARM_Driver\
       -I./Driver/STM32F10x_StdPeriph_Driver/inc\
       -I./USB\

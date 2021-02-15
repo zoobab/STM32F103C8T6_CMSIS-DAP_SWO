@@ -1,0 +1,47 @@
+/*----------------------------------------------------------------------------
+ * Name:    main.c
+ *----------------------------------------------------------------------------*/
+
+/* Includes ------------------------------------------------------------------*/
+
+#include <stdio.h>
+#include <stdlib.h>
+
+#include "RTE_Components.h"
+#include  CMSIS_device_header
+ 
+#ifdef RTE_Compiler_EventRecorder
+#include "EventRecorder.h"
+#endif
+
+#include "cmsis_cv.h"
+
+//lint -e970 allow using int for main
+
+/* Private functions ---------------------------------------------------------*/
+int main (void);
+
+/**
+  * @brief  Main program
+  * @param  None
+  * @retval None
+  */
+int main (void)
+{  
+
+  // System Initialization
+  SystemCoreClockUpdate();
+#ifdef RTE_Compiler_EventRecorder
+  // Initialize and start Event Recorder
+  (void)EventRecorderInitialize(EventRecordError, 1U);
+  (void)EventRecorderEnable    (EventRecordAll, 0xFEU, 0xFEU);
+#endif
+  
+  cmsis_cv();
+  
+  #ifdef __MICROLIB
+  for(;;) {}
+  #else
+  exit(0);
+  #endif
+}

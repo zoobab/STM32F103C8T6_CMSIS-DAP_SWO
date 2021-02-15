@@ -281,12 +281,7 @@ extern void     DAP_Setup (void);
 
 __STATIC_FORCEINLINE void PIN_DELAY_SLOW (uint32_t delay) {
 
-__asm  //RadioOperator
-  {
-loop:
-    SUBS delay, delay, 1
-    BNE loop
-  }
+__asm__("loop: SUBS delay, delay, 1, BNE loop");
 }
 
 // Fixed delay for fast clock generation
