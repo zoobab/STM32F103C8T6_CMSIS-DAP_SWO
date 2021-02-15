@@ -279,9 +279,10 @@ extern void     DAP_Setup (void);
 #define DELAY_SLOW_CYCLES       3U      // Number of cycles for one iteration
 #endif
 
-__STATIC_FORCEINLINE void PIN_DELAY_SLOW (uint32_t delay) {
-
-__asm__("loop: SUBS delay, delay, 1, BNE loop");
+void PIN_DELAY_SLOW (uint32_t delay) {
+  __asm volatile("loop:\n\t"
+	               "    SUBS %0, %0, #1\n\t"
+	               "    BNE loop\n\t" : "=r" (delay));
 }
 
 // Fixed delay for fast clock generation
