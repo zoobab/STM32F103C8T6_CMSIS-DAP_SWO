@@ -280,22 +280,22 @@ void DMA_ChannelUninitialize (uint32_t dma, uint32_t channel) {
 
 
 /// DMA1 Channel Events
-__weak void DMA1_Channel1_Event (uint32_t event) {;}
-__weak void DMA1_Channel2_Event (uint32_t event) {;}
-__weak void DMA1_Channel3_Event (uint32_t event) {;}
-__weak void DMA1_Channel4_Event (uint32_t event) {;}
-__weak void DMA1_Channel5_Event (uint32_t event) {;}
-__weak void DMA1_Channel6_Event (uint32_t event) {;}
-__weak void DMA1_Channel7_Event (uint32_t event) {;}
+void DMA1_Channel1_Event (uint32_t event) {;}
+void DMA1_Channel2_Event (uint32_t event) {;}
+void DMA1_Channel3_Event (uint32_t event) {;}
+void DMA1_Channel4_Event (uint32_t event) {;}
+void DMA1_Channel5_Event (uint32_t event) {;}
+void DMA1_Channel6_Event (uint32_t event) {;}
+void DMA1_Channel7_Event (uint32_t event) {;}
 
 
 #if defined (STM32F10X_ENABLE_DMA2)
 /// DMA2 Channel Events
-__weak void DMA2_Channel1_Event (uint32_t event) {;}
-__weak void DMA2_Channel2_Event (uint32_t event) {;}
-__weak void DMA2_Channel3_Event (uint32_t event) {;}
-__weak void DMA2_Channel4_Event (uint32_t event) {;}
-__weak void DMA2_Channel5_Event (uint32_t event) {;}
+void DMA2_Channel1_Event (uint32_t event) {;}
+void DMA2_Channel2_Event (uint32_t event) {;}
+void DMA2_Channel3_Event (uint32_t event) {;}
+void DMA2_Channel4_Event (uint32_t event) {;}
+void DMA2_Channel5_Event (uint32_t event) {;}
 #endif
 
 /**
