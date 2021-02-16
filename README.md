@@ -22,3 +22,8 @@ Here is the BluePill remapped SWD port in use:
 ## Links
 
 * Check my another repository for USB2.0 High-Speed CMSIS-DAP device, incredible more: https://github.com/RadioOperator/CMSIS-DAP_for_STLINK-V3MINI
+
+## Todo
+
+* Add OpenOCD configuration
+* Add JTAG and SWD pinout
